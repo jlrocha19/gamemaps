@@ -41,7 +41,9 @@ class _HowAccessState extends State<HowAccess> {
                 width: MediaQuery.of(context).size.width,
                 height: 62,
                 child: OutlinedButton.icon(
-                  onPressed: () => {},
+                  onPressed: () => {
+                    Navigator.pushNamed(context, '/login')
+                  },
                   icon: Image.network(
                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDgM1YTdYh-GuL5hYOUyoESjztz-dmo8PDtb8y3uL1Zw&s",
                     width: 32,
@@ -69,7 +71,9 @@ class _HowAccessState extends State<HowAccess> {
                 width: MediaQuery.of(context).size.width,
                 height: 62,
                 child: OutlinedButton(
-                  onPressed: () => {},
+                  onPressed: () => {
+                    Navigator.pushNamed(context, '/login')
+                  },
                   style: OutlinedButton.styleFrom(
                       backgroundColor: const Color.fromRGBO(20, 200, 113, 1.0),
                       side: const BorderSide(
